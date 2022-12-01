@@ -1,0 +1,102 @@
+@import './form.css';
+
+body {
+  background-color: #f3fffb;
+}
+
+#app {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: normal;
+
+}
+
+.appheader {
+  background-color: #64756f;
+}
+
+a,
+.green {
+  text-decoration: none;
+  /* color: rgb(0, 189, 126); */
+  color: black;
+  transition: 0.4s;
+}
+
+.page {
+  text-align: left;
+  max-width: 1240px;
+}
+
+.row{
+  margin: auto;
+}
+
+.table-fixed{
+  display: block;
+  overflow-y: scroll;
+  height: 600px;
+  width: 100%;
+}
+.table-fixed thead {
+  position: sticky; top: 0; z-index: 1; 
+  width: 100%;
+  background:#cfd6d3; 
+}
+
+.btn-refresh {
+  background-color: #00b6da;
+  color: #fff;
+}
+.btn-refresh:hover {
+  background-color: #00cbf4;
+  color: #fff;
+}
+.btn-add {
+  background-color: #00a770;
+  color: #fff;
+}
+.btn-add:hover {
+  background-color: #00da92;
+  color: #fff;
+}
+.btn-remove {
+  background-color: #ff3b14;
+  color: #fff;
+}
+.btn-remove:hover {
+  background-color: #ff6b4e;
+  color: #fff;
+}
+.btn-edit {
+  background-color: #ffaf0d;
+  color: #fff;
+}
+.btn-edit:hover {
+  background-color: #ffc85a;
+  color: #fff;
+}
+
+
+.right-buffer { margin-right:15px; }
+@media (hover: hover) {
+  a:hover {
+    /* color: hsla(160, 100%, 37%, 0.2); */
+    color: rgb(0, 189, 126);
+  }
+}
+
+@media (min-width: auto) {
+  body {
+    display: flex;
+    place-items: center;
+    
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
+  }
+}
