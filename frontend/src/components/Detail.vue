@@ -59,8 +59,8 @@ export default {
         </div>
         <div class="col-md-10">
             <strong>Sách yêu thích:&nbsp;</strong>
-            <i v-if="book.favorite" class="fas fa-check"></i>
-            <i v-else class="fas fa-times"></i>
+            <i v-if="book.favorite" class="fas fa-heart text-danger"></i>
+                <i v-else class="fa-regular fa-heart text-danger"></i>
         </div>
     </div>
 </template>
